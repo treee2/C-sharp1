@@ -1,0 +1,12 @@
+int[,] array2 = new int[6,15];
+Random random = new Random();
+for (int i = 0; i < array2.GetLength(0); i++)
+{
+    for (int j = 0; j < array2.GetLength(1); j++)    // это двухмерный массив
+    {
+        array2[i, j] = random.Next(5, 50);
+        Console.Write(array2[i, j] + " "); //конкатенируем
+    }
+    Console.WriteLine();
+}
+
