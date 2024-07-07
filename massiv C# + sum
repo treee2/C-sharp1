@@ -1,0 +1,13 @@
+/*Сумма рандомных 5 чисел и вывод их на экран(можно посчитать сумму любого количества чисел)*/
+
+int[] Q = new int[5];
+Random random = new Random();
+int sum = 0;
+for (int i = 0; i < Q.Length; ++i)
+{
+    Q[i] = random.Next(0, 999);
+    sum += Q[i];
+    Console.WriteLine("->" + Q[i]);
+    Console.WriteLine("промежуточная сумма: " + sum);
+}
+Console.WriteLine("Итог: " + sum);
